@@ -39,10 +39,10 @@ Register an handler to the eventName, you can register more than one handler to 
 they will be called in the order of your registered them.
 
 
-### off(eventName,[handler]) 
+### off(eventName,[handler])
 
 #### eventName(String) : Same as `on` method
-#### handler(Function) : (Optional) 
+#### handler(Function) : (Optional)
 
 Remove an handler from an eventName, you can remove a specific handler 
 by passing the `handler` param(Should be the same Function as it registered),
@@ -56,6 +56,7 @@ if no `handler` are passed in, all handlers under this eventName will be removed
 #### context : (Optional) You can set the context of the callback by passing this param
 #### param1,param2...: The rest of the arguments will be all passed into to the callback function.
 
+Trigger the event, call all the handlers you registered.
 
 ## Have fun :)
 
