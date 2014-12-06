@@ -23,7 +23,9 @@ In one of your module, you can register an `event`, and when it happens, you can
 
         //when data updated
         var newData = 'new stuff';
-        eventMediator.trigger('update',newData);
+
+        // The second parameter is the context of those callbacks
+        eventMediator.trigger('update',this,newData);
     });
 
 ## METHODS
